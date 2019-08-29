@@ -1,0 +1,16 @@
+{
+  "name": "succsess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

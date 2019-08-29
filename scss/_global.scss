@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Consolas';
+    src: url('../fonts/Consolas.ttf');
+}
+@font-face{
+    font-family: 'Graphik';
+    src: url('../fonts/Graphik-Medium.otf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Graphik';
+    src: url('../fonts/Graphik-Regular.ttf');
+    font-weight: 400;
+}
+.row-no-padding {
+    [class*="col-"] {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+}
+
+
+//first video
+section.first{
+    video{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -10;
+        object-fit: cover;
+        object-position: center;
+        -o-object-fit: cover;
+        -o-object-position: center;
+    }
+    .bottomtext{
+        position: fixed;
+        bottom: 16px;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+        font-family: 'Consolas', sans-serif;
+        font-weight: 400;
+        color: #fff;
+        .scroll{
+            font-size: 12px;
+            display: inline-table;
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            padding: 10px 0 0 10px;
+            @media screen and (max-width: 800px) {
+                padding: 12px 30px 23px 0;
+                
+            }
+            @media screen and (max-width: 760px) {
+                display: none;
+                
+            }
+        }
+        .description{
+            max-width: 335px;
+            min-width: 185px;
+            width: 100%;
+            font-size: 12px;
+            line-height: 15px;
+            margin-left: 102px;
+            margin-bottom: 5px;
+            @media screen and (max-width: 800px) {
+                width: 185px;
+                margin-left: 55px;
+            }
+            @media screen and (max-width: 800px) {
+                width: 185px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+section.empty{
+    height: 100vh;
+}
