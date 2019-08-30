@@ -42,6 +42,7 @@ section.first{
         justify-content: space-between;
         font-family: 'Consolas', sans-serif;
         font-weight: 400;
+        z-index: -5;
         color: #fff;
         .scroll{
             font-size: 12px;
@@ -80,11 +81,6 @@ section.first{
         }
     }
 }
-section.empty{
-    height: 100vh;
-}
-section.second{
-    height: 30vh;
-    background-color: #fff;
-}
+
+
 
