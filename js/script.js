@@ -19,6 +19,16 @@
 // }
 
 
+    
+
+if ($(window).width() < 770) {
+    $('.rightside').addClass('col-md-12').removeClass('col-md-6');
+    $('.leftside').addClass('col-md-12').removeClass('col-md-6');
+  }
+    
+        
+
+
 $(window).scroll(function() {
      var scroll = $(window).scrollTop();
      console.log(scroll);

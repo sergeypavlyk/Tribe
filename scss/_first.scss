@@ -15,7 +15,8 @@ section.first{
         width: 100%;
         z-index: 5;
         -webkit-animation: slide-top .8s ease-in-out 2s forwards;
-	    animation: slide-top .8s ease-in-out 2s forwards;
+        animation: slide-top .8s ease-in-out 2s forwards;
+        
         @-webkit-keyframes slide-top {
             0% {
               -webkit-transform: translateY(0);
@@ -39,6 +40,9 @@ section.first{
         .container-fluid{
             position: absolute;
             bottom: 0;
+            @media screen and (max-height: 760px) {
+                bottom: -60px;
+            }
         }
         .title{
             max-width: 345px;
@@ -55,6 +59,10 @@ section.first{
             @media screen and (max-width: 760px){
                 padding-bottom: 30px;
                 width: 268px;
+            }
+            @media screen and (max-height: 760px){
+                padding-bottom: 0;
+                margin-bottom: -40px;
             }
             .grey{
                 color: #808080;

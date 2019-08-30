@@ -146,6 +146,9 @@ section.first {
     section.first .slideup .container-fluid {
       position: absolute;
       bottom: 0; }
+      @media screen and (max-height: 760px) {
+        section.first .slideup .container-fluid {
+          bottom: -60px; } }
     section.first .slideup .title {
       max-width: 345px;
       min-width: 268px;
@@ -162,6 +165,10 @@ section.first {
         section.first .slideup .title {
           padding-bottom: 30px;
           width: 268px; } }
+      @media screen and (max-height: 760px) {
+        section.first .slideup .title {
+          padding-bottom: 0;
+          margin-bottom: -40px; } }
       section.first .slideup .title .grey {
         color: #808080;
         line-height: 0.8;
@@ -212,11 +219,30 @@ section.empty {
 section.third {
   min-height: 100vh;
   background-color: #000; }
+  @media screen and (max-width: 1020px) {
+    section.third .socials {
+      display: none; } }
+  @media screen and (max-width: 770px) {
+    section.third .leftside {
+      position: relative; }
+      section.third .leftside .hide {
+        display: block;
+        margin-top: -60px;
+        padding-bottom: 20px;
+        padding-left: 10px; } }
+  section.third .hide {
+    display: none; }
   section.third .head {
     height: 35vh;
     font-family: 'Graphik', sans-serif;
     color: #808080;
     position: relative; }
+    @media screen and (max-width: 800px) {
+      section.third .head {
+        height: 22vh; } }
+    @media screen and (max-width: 560px) {
+      section.third .head {
+        height: 25vh; } }
     section.third .head h2 {
       font-size: 47px;
       width: 365px;
@@ -227,11 +253,20 @@ section.third {
       letter-spacing: -1px; }
       @media screen and (max-width: 800px) {
         section.third .head h2 {
-          width: 253px;
-          font-size: 45px; } }
+          width: 265px;
+          font-size: 42px; } }
   section.third .all {
     height: 65vh;
     position: relative; }
+    @media screen and (max-width: 800px) {
+      section.third .all {
+        height: 28vh; } }
+    @media screen and (max-width: 560px) {
+      section.third .all {
+        height: 52vh; } }
+    @media screen and (max-height: 760px) {
+      section.third .all {
+        height: 65vh; } }
     section.third .all h2.white {
       font-size: 50px;
       width: 395px;
@@ -242,13 +277,21 @@ section.third {
       padding-left: 13px; }
       @media screen and (max-width: 800px) {
         section.third .all h2.white {
-          width: 253px;
-          font-size: 45px; } }
+          width: 265px;
+          font-size: 42px; } }
     section.third .all .bottomsection {
       position: absolute;
       bottom: 0;
       left: 0;
       padding-bottom: 31px; }
+      @media screen and (max-width: 800px) {
+        section.third .all .bottomsection {
+          top: -35%;
+          left: 57%; } }
+      @media screen and (max-width: 560px) {
+        section.third .all .bottomsection {
+          top: 37%;
+          left: 0; } }
       section.third .all .bottomsection .videowrapper {
         overflow: hidden;
         width: 227px;
@@ -282,6 +325,9 @@ section.third {
         line-height: 20px;
         padding-bottom: 0;
         margin-bottom: 0; }
+        @media screen and (max-width: 770px) {
+          section.third .all .bottomsection p:last-child {
+            max-width: 250px; } }
     section.third .all .socials img {
       margin-top: 150px;
       padding-left: 60px; }
@@ -289,6 +335,12 @@ section.third {
     position: relative;
     height: 100vh;
     overflow: hidden; }
+    @media screen and (max-width: 770px) {
+      section.third .rightside {
+        height: 50vh; } }
+    @media screen and (max-width: 560px) {
+      section.third .rightside {
+        height: 44vh; } }
     section.third .rightside img {
       position: absolute;
       left: 100%;
@@ -311,6 +363,13 @@ section.third {
       left: 17%;
       font-size: 23px;
       letter-spacing: -1px; }
+      @media screen and (max-width: 770px) {
+        section.third .rightside p.center {
+          left: 58.5%; } }
+      @media screen and (max-width: 560px) {
+        section.third .rightside p.center {
+          left: 5%;
+          top: 38%; } }
     section.third .rightside span {
       font-family: "Consolas", sans-serif;
       font-size: 12px;
@@ -319,8 +378,27 @@ section.third {
       left: 17%;
       line-height: 10px;
       color: #fff; }
+      @media screen and (max-width: 770px) {
+        section.third .rightside span {
+          left: 59%;
+          top: 61%;
+          line-height: 1; } }
+      @media screen and (max-width: 560px) {
+        section.third .rightside span {
+          left: 5%;
+          top: 47%; } }
     section.third .rightside p.bottom {
       bottom: 2%;
       left: 17%;
       font-size: 14px;
       letter-spacing: -1px; }
+      @media screen and (max-width: 770px) {
+        section.third .rightside p.bottom {
+          left: 59%;
+          top: 88%;
+          line-height: 1;
+          max-width: 240px; } }
+      @media screen and (max-width: 560px) {
+        section.third .rightside p.bottom {
+          left: 5%;
+          top: 82%; } }
