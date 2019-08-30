@@ -24,7 +24,8 @@
 if ($(window).width() < 770) {
     $('.rightside').addClass('col-md-12').removeClass('col-md-6');
     $('.leftside').addClass('col-md-12').removeClass('col-md-6');
-  }
+}
+  
     
         
 
@@ -38,6 +39,22 @@ $(window).scroll(function() {
          $('.all h2.white').addClass('active');
      }
     })
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+        var h = $(window).height(); 
+        if (scroll >= 1920) { 
+            function go(){
+                $('section.fourth .today').addClass('active');
+              }
+              setTimeout(go, 1000);   
+        }
+        if (scroll >= 2300) { 
+            $('.tomorrow hr').addClass('active');
+        }
+        
+       })
 
 $(document).ready(function() {
 

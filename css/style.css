@@ -402,3 +402,76 @@ section.third {
         section.third .rightside p.bottom {
           left: 5%;
           top: 82%; } }
+
+section.fourth .today {
+  background-image: url("../img/3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60.5vh;
+  position: relative;
+  margin-top: -60.5vh;
+  z-index: -1;
+  transition: 4s; }
+  section.fourth .today.active {
+    margin-top: 0vh; }
+  section.fourth .today hr {
+    position: absolute;
+    top: 38%;
+    height: 0.5px;
+    width: 97%;
+    background-color: #8DA2A5; }
+  section.fourth .today .tomorrow {
+    width: 205px;
+    position: absolute;
+    top: 42%;
+    left: 2%;
+    letter-spacing: 1px; }
+    @media screen and (max-width: 500px) {
+      section.fourth .today .tomorrow {
+        left: 6%; } }
+    section.fourth .today .tomorrow p {
+      font-family: 'Graphik', sans-serif;
+      font-size: 35px;
+      color: #fff; }
+      @media screen and (max-width: 768px) {
+        section.fourth .today .tomorrow p {
+          font-size: 32px; } }
+    section.fourth .today .tomorrow hr {
+      width: 0.1%;
+      position: absolute;
+      top: 15%;
+      height: 3px;
+      background-color: #fff;
+      transition: 4s; }
+      section.fourth .today .tomorrow hr.active {
+        width: 100%; }
+  section.fourth .today .todayy {
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    letter-spacing: -2px; }
+    @media screen and (max-width: 500px) {
+      section.fourth .today .todayy {
+        left: 6%;
+        top: 51%; } }
+    section.fourth .today .todayy p {
+      font-family: 'Graphik', sans-serif;
+      font-size: 80px;
+      color: #fff; }
+      @media screen and (max-width: 768px) {
+        section.fourth .today .todayy p {
+          font-size: 68px; } }
+  section.fourth .today .bottomtext {
+    position: absolute;
+    bottom: 0.5%;
+    left: 58.5%;
+    font-family: 'Consolas', sans-serif;
+    font-size: 12px;
+    color: #fff; }
+    @media screen and (max-width: 500px) {
+      section.fourth .today .bottomtext {
+        left: 6%; } }
+
+section.fourth .climateaction {
+  background-color: #000;
+  height: 39.5vh; }
