@@ -44,13 +44,14 @@ $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         console.log(scroll);
         var h = $(window).height(); 
-        if (scroll >= 1920) { 
+        if (scroll >= 1642) { 
             function go(){
                 $('section.fourth .today').addClass('active');
+                $('section.third .rightside, section.third .leftside').css('margin-top', '-60.5vh');
               }
               setTimeout(go, 1000);   
         }
-        if (scroll >= 2300) { 
+        if (scroll >= 1642) { 
             $('.tomorrow hr').addClass('active');
         }
         
