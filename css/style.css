@@ -448,7 +448,7 @@ section.fourth .today {
       height: 3px;
       background-color: #fff;
       transition: 4s;
-      transition-delay: 4s; }
+      transition-delay: 2s; }
       section.fourth .today .tomorrow hr.active {
         width: 100%; }
   section.fourth .today .todayy {
@@ -480,7 +480,7 @@ section.fourth .today {
 
 section.fourth .climateaction {
   background-color: #000;
-  height: 39.5vh;
+  min-height: 39.5vh;
   position: relative; }
   section.fourth .climateaction .header {
     max-width: 670px;
@@ -490,6 +490,10 @@ section.fourth .climateaction {
     left: 1.7%;
     line-height: 35px;
     letter-spacing: -3px; }
+    @media screen and (max-width: 500px) {
+      section.fourth .climateaction .header {
+        padding: 10px;
+        margin-top: -30px; } }
     section.fourth .climateaction .header span.grey {
       font-size: 53px;
       color: #808080; }
@@ -514,8 +518,14 @@ section.fourth .climateaction {
       width: 102%;
       height: 1px;
       background-color: #fff; }
+      @media screen and (max-width: 500px) {
+        section.fourth .climateaction .container-fluid hr {
+          margin-top: 75px; } }
     section.fourth .climateaction .container-fluid hr.sec {
       width: 102%; }
+      @media screen and (max-width: 500px) {
+        section.fourth .climateaction .container-fluid hr.sec {
+          margin-top: 120px; } }
     section.fourth .climateaction .container-fluid span {
       font-family: 'Consolas', sans-serif;
       font-size: 12px;
@@ -524,6 +534,9 @@ section.fourth .climateaction {
       font-family: 'Consolas', sans-serif;
       font-size: 12px;
       padding-right: 20px; }
+      @media screen and (max-width: 500px) {
+        section.fourth .climateaction .container-fluid span.sec {
+          display: block; } }
     section.fourth .climateaction .container-fluid p {
       display: inline-block;
       font-size: 16px;
@@ -532,7 +545,20 @@ section.fourth .climateaction {
       margin-left: 17%;
       margin-top: -20px;
       line-height: 19px; }
+      @media screen and (max-width: 500px) {
+        section.fourth .climateaction .container-fluid p {
+          display: inline-block;
+          margin-top: 20px;
+          margin-left: 0; } }
 
 section.fifth {
-  height: 100vh;
+  height: 10vh;
+  background-color: #000; }
+
+section.sixth {
+  height: 55vh;
+  background-color: #000; }
+
+section.seventh {
+  height: 50vh;
   background-color: #000; }

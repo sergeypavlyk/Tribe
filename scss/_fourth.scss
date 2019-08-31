@@ -43,7 +43,7 @@ section.fourth{
                 height: 3px;
                 background-color: #fff;
                 transition: 4s;
-                transition-delay: 4s;
+                transition-delay: 2s;
                 &.active{
                     width: 100%;
                 }
@@ -83,7 +83,7 @@ section.fourth{
 
     .climateaction{
         background-color: #000;
-        height: 39.5vh;
+        min-height: 39.5vh;
         position: relative;
         .header{
             max-width: 670px;
@@ -93,6 +93,10 @@ section.fourth{
             left: 1.7%;
             line-height: 35px;
             letter-spacing: -3px;
+            @media screen and (max-width: 500px){
+                padding: 10px;
+                margin-top: -30px;
+            }
             span.grey{
                 font-size: 53px;
                 color: #808080;
@@ -106,6 +110,7 @@ section.fourth{
                 @media screen and (max-width:800px){
                     font-size: 45px;
                 }
+                
             }
         }
         .container-fluid{
@@ -122,9 +127,16 @@ section.fourth{
                 width: 102%;
                 height: 1px;
                 background-color: #fff;
+                @media screen and (max-width: 500px){
+                    margin-top: 75px;
+                }
+                
             }
             hr.sec{
-                width: 102%
+                width: 102%;
+                @media screen and (max-width: 500px){
+                    margin-top: 120px;
+                }
             }
             span{
                 font-family: 'Consolas', sans-serif;
@@ -135,6 +147,9 @@ section.fourth{
                 font-family: 'Consolas', sans-serif;
                 font-size: 12px;
                 padding-right: 20px;
+                @media screen and (max-width: 500px){
+                    display: block;
+                }
             }
             p{
                display: inline-block;
@@ -144,6 +159,11 @@ section.fourth{
                margin-left: 17%;
                margin-top: -20px;
                line-height: 19px;
+               @media screen and (max-width: 500px){
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: 0;
+            }
             }
         }
     }
