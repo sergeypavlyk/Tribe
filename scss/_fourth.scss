@@ -111,22 +111,20 @@ section.fourth{
         .container-fluid{
             position: absolute;
             bottom: 3%;
-            left: 0.7%;
+            width: 100%;
+            .row{
+                width: 100%;
+            }
             .col-md-6.col-sm-12{
                 height: 47px;
-                &:last-child{
-                    margin-left: -18px;
-                }
             }
             hr{
-                width: 100%;
+                width: 102%;
                 height: 1px;
                 background-color: #fff;
-                
             }
             hr.sec{
-                
-                width: 98.5%;
+                width: 102%
             }
             span{
                 font-family: 'Consolas', sans-serif;

@@ -505,17 +505,17 @@ section.fourth .climateaction {
   section.fourth .climateaction .container-fluid {
     position: absolute;
     bottom: 3%;
-    left: 0.7%; }
+    width: 100%; }
+    section.fourth .climateaction .container-fluid .row {
+      width: 100%; }
     section.fourth .climateaction .container-fluid .col-md-6.col-sm-12 {
       height: 47px; }
-      section.fourth .climateaction .container-fluid .col-md-6.col-sm-12:last-child {
-        margin-left: -18px; }
     section.fourth .climateaction .container-fluid hr {
-      width: 100%;
+      width: 102%;
       height: 1px;
       background-color: #fff; }
     section.fourth .climateaction .container-fluid hr.sec {
-      width: 98.5%; }
+      width: 102%; }
     section.fourth .climateaction .container-fluid span {
       font-family: 'Consolas', sans-serif;
       font-size: 12px;
