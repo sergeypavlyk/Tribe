@@ -70,6 +70,23 @@ section.first .bottomtext {
         width: 185px;
         margin-left: 20px; } }
 
+section.trigger {
+  margin-top: -95vh; }
+  section.trigger .up {
+    height: 95vh; }
+  section.trigger .bottom {
+    height: 5vh;
+    background-color: #000; }
+
+section.emptyforheader {
+  height: 100vh;
+  margin-bottom: -35vh; }
+
+section.emptyforplanet {
+  height: 100vh;
+  margin-bottom: -45vh;
+  margin-top: -55vh; }
+
 header {
   position: fixed;
   top: 0;
@@ -107,7 +124,10 @@ header {
     background-color: #1EC95B;
     border: none;
     margin-top: 5px;
-    color: #fff; }
+    color: #fff;
+    transition: .3s; }
+    header button:hover {
+      opacity: .9; }
 
 section.first {
   height: 100vh;
@@ -415,7 +435,7 @@ section.fourth .today {
   position: relative;
   margin-top: -60.5vh;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.3;
   transition: 3s; }
   section.fourth .today.active {
     opacity: 1; }
@@ -448,7 +468,7 @@ section.fourth .today {
       height: 3px;
       background-color: #fff;
       transition: 4s;
-      transition-delay: 2s; }
+      transition-delay: 1s; }
       section.fourth .today .tomorrow hr.active {
         width: 100%; }
   section.fourth .today .todayy {
@@ -552,13 +572,172 @@ section.fourth .climateaction {
           margin-left: 0; } }
 
 section.fifth {
-  height: 10vh;
+  min-height: 50.5vh;
   background-color: #000; }
+  section.fifth .up {
+    height: 50vh;
+    margin-top: -50vh; }
+  section.fifth .container-fluid {
+    width: 100%; }
+    section.fifth .container-fluid .row {
+      width: 100%; }
+    section.fifth .container-fluid .col-md-6.col-sm-12 {
+      margin-top: 110px; }
+      @media screen and (max-width: 600px) {
+        section.fifth .container-fluid .col-md-6.col-sm-12 {
+          margin-top: 170px; } }
+    @media screen and (max-width: 600px) {
+      section.fifth .container-fluid .col-md-6.col-sm-12:last-child {
+        margin-top: 0; } }
+    section.fifth .container-fluid hr {
+      width: 102%;
+      height: 1px;
+      background-color: #fff; }
+      @media screen and (max-width: 600px) {
+        section.fifth .container-fluid hr {
+          width: 93%;
+          margin-left: -5px; } }
+    section.fifth .container-fluid hr.sec {
+      width: 102%; }
+      @media screen and (max-width: 600px) {
+        section.fifth .container-fluid hr.sec {
+          width: 93%;
+          margin-left: -5px; } }
+    section.fifth .container-fluid span {
+      font-family: 'Consolas', sans-serif;
+      font-size: 12px;
+      color: #fff; }
+    section.fifth .container-fluid span.sec {
+      font-family: 'Consolas', sans-serif;
+      font-size: 12px;
+      padding-right: 20px; }
+    section.fifth .container-fluid p {
+      font-size: 35px;
+      font-family: 'Graphik', sans-serif;
+      color: #fff;
+      margin-left: 17%;
+      margin-top: -20px;
+      letter-spacing: -2px;
+      width: 350px;
+      line-height: 35px; }
+      @media screen and (max-width: 600px) {
+        section.fifth .container-fluid p {
+          margin-top: 10px;
+          margin-left: 0;
+          font-size: 28px; } }
+    section.fifth .container-fluid .center {
+      position: relative;
+      height: 320px; }
+      section.fifth .container-fluid .center img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
 
 section.sixth {
-  height: 55vh;
   background-color: #000; }
+  section.sixth img {
+    width: 100%; }
+  section.sixth img.oil {
+    padding: 0 2.5px 5px 0; }
+  section.sixth img.jacket {
+    padding: 0 0 5px 2.5px; }
+  section.sixth .col-md-6.col-sm-12 {
+    position: relative; }
+  section.sixth .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    section.sixth .text p {
+      color: #fff;
+      font-size: 12px;
+      font-family: 'Consolas',sans-serif;
+      text-align: center; }
+      section.sixth .text p:last-child {
+        font-size: 27px;
+        font-family: 'GRAPHIK', sans-serif; }
 
-section.seventh {
-  height: 50vh;
-  background-color: #000; }
+section.seventh .up {
+  height: 32vh;
+  margin-top: -32vh; }
+
+section.seventh .bottom {
+  position: relative;
+  height: 68vh; }
+  @media screen and (max-width: 800px) {
+    section.seventh .bottom {
+      height: 29vh; } }
+  section.seventh .bottom img {
+    position: absolute;
+    object-fit: cover;
+    -o-object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+  section.seventh .bottom .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    section.seventh .bottom .text p {
+      color: #fff;
+      font-size: 12px;
+      font-family: 'Consolas',sans-serif;
+      text-align: center; }
+      section.seventh .bottom .text p:last-child {
+        font-size: 27px;
+        font-family: 'GRAPHIK', sans-serif; }
+
+section.eight {
+  min-height: 78vh;
+  width: 100%;
+  background-image: url("../img/planet.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.eight p {
+    font-size: 46px;
+    font-weight: 400;
+    font-family: 'GRAPHIK', sans-serif;
+    color: #9e9292;
+    margin: 125px 0 45px 90px;
+    line-height: 50px;
+    max-width: 300px;
+    width: 100%; }
+    @media all and (max-width: 800px) {
+      section.eight p {
+        font-size: 40px;
+        max-width: 250px;
+        margin-left: 50px;
+        margin-top: 100px;
+        line-height: 45px; } }
+  section.eight span {
+    max-width: 400px;
+    font-family: 'GRAPHIK', sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 95px;
+    display: block; }
+    @media all and (max-width: 800px) {
+      section.eight span {
+        line-height: 20px;
+        margin-left: 50px; } }
+  section.eight a button {
+    font-family: 'Consolas', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    height: 32px;
+    width: 134px;
+    font-size: 12px;
+    background-color: #1EC95B;
+    border: none;
+    margin-top: 5px;
+    color: #fff;
+    margin-left: 95px; }
+    @media all and (max-width: 800px) {
+      section.eight a button {
+        margin-left: 50px; } }

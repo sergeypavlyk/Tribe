@@ -7,7 +7,7 @@ section.fourth{
         position: relative;
         margin-top: -60.5vh;
         z-index: -1;
-        opacity: 0.1;
+        opacity: 0.3;
         transition: 3s;
         &.active{
             opacity: 1;
@@ -43,7 +43,7 @@ section.fourth{
                 height: 3px;
                 background-color: #fff;
                 transition: 4s;
-                transition-delay: 2s;
+                transition-delay: 1s;
                 &.active{
                     width: 100%;
                 }

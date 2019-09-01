@@ -81,6 +81,27 @@ section.first{
         }
     }
 }
+section.trigger{
+    margin-top: -95vh;
+    .up{
+        height: 95vh;
+
+    }
+    .bottom{
+        height: 5vh;
+        background-color: #000;
+    }
+}
+
+section.emptyforheader{
+    height: 100vh;
+    margin-bottom: -35vh;
+}
+section.emptyforplanet{
+    height: 100vh;
+    margin-bottom: -45vh;
+    margin-top: -55vh;
+}
 
 
 

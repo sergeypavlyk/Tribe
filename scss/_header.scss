@@ -42,5 +42,10 @@ header{
         border: none;
         margin-top: 5px;
         color: #fff;
+        transition: .3s;
+        &:hover
+        {
+            opacity: .9;
+        }
     }
 }

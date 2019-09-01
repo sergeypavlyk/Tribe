@@ -61,7 +61,7 @@ if ($(window).width() < 770) {
 
 
 //when fifth section 5vh is in viewport img slide from up
-$('section.fifth').on('inview', function(event, isInView) {
+$('section.trigger .bottom').on('inview', function(event, isInView) {
     if (isInView) {
         $('section.fourth .today').addClass('active');
         $('section.third .rightside, section.third .leftside').css('margin-top', '-60.5vh');
@@ -132,8 +132,9 @@ if($(window).innerWidth() >= 600) {
             scrollSpeed: 2000,
             scrollbars: false,
             touchScroll: true,
+            setHeights: false,
             easing: "easeInOutCubic",
-            interstitialSection : ".fourth, .third, .sixth, .fifth, .seventh"
+            // interstitialSection : ".fourth, .third, .sixth, .fifth, .seventh"
         });
     });
  } 
