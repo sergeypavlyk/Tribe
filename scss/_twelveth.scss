@@ -1,0 +1,56 @@
+section.twelveth{
+    min-height: 85vh;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    background-color: #000;
+    font-size: 12px;
+    font-family: 'GRAPHIK', sans-serif;
+    @media all and (max-width: 800px){
+    }
+    .row{
+        position: absolute;
+        bottom: 0;
+    }
+    img{
+        width: 100vw;
+        object-fit: cover;
+        height: 70vh;
+        @media all and (max-width: 600px){
+            height: 60vh;
+        }
+    }
+    p{
+        color: #fff;
+    }
+    span{
+        color: rgb(158, 146, 146);
+    }
+    span.blockk{
+        display: block;
+        padding-bottom: 20px;
+    }
+    span.white{
+        color: #fff;
+        padding-right: 50px;
+    }
+    @media all and (max-width: 768px){
+        span.bright{
+            display: none;
+        }
+    }
+    .bottom{
+        left: 30px;
+    }
+    .bottomright{
+        padding-top: 60px;
+    }
+    .btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-family: 'Consolas', sans-serif;
+    }
+}

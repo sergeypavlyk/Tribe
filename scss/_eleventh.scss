@@ -1,0 +1,168 @@
+section.eleventh{
+    width: 100vw;
+    height: auto;
+    background-color: #000;
+    .height--1, .height--2{
+        
+        position: relative;
+        margin: 150px 0 150px 30px;
+        &:last-child{
+            margin: 150px 0 150px 0px;
+            @media all and (max-width: 600px){
+                margin-top: 0px;
+            }
+        }
+        p.title{
+            font-family: 'GRAPHIK', sans-serif;
+            font-size: 53px;
+            color: #fff;
+            line-height: 1;
+            max-width: 300px;
+            width: 100%;
+        }
+        span.title{
+            font-family: 'GRAPHIK', sans-serif;
+            font-size: 53px;
+            color: rgb(158, 146, 146);
+            line-height: 0.3; 
+            max-width: 300px;
+            width: 100%;
+        }
+        @media all and (max-width: 1000px){
+            p.title{
+                font-size: 45px;
+            }
+            span.title{
+                font-size: 45px;
+            }
+        }
+        hr{
+            background-color: rgb(158, 146, 146);
+            height: 0.5px;
+        }
+        hr.second{
+            margin-top: 168px;
+            height: 0.5px;
+            background-color: rgb(158, 146, 146);
+        }
+        @media all and (max-width: 1000px){
+            hr.second{
+                margin-top: 149px;
+            }
+        }
+        .sm-1{
+            font-family: 'Consolas', sans-serif;
+            font-size: 12px;
+            color: #fff;
+        }
+        .sm-2{
+            font-family: 'Consolas', sans-serif;
+            font-size: 12px;
+            color: #fff;
+            margin-left: 50px;
+        }
+
+
+        p.whitebig{
+            font-family: 'GRAPHIK', sans-serif;
+            font-size: 30px;
+            line-height: 1;
+            color: #fff;
+            @media all and (max-width:600px){
+                padding: 0 30px
+            }
+        }
+        span.brightbig{
+            font-family: 'GRAPHIK', sans-serif;
+            font-size: 30px;
+            line-height: 1;
+            
+            color: rgb(158, 146, 146);
+            @media all and (max-width:600px){
+                padding: 10px 30px;
+                display: block;
+            }
+        }
+        p.brightbigl{
+            padding: 30px 0 30px 0;
+            font-family: 'GRAPHIK', sans-serif;
+            font-size: 30px;
+            line-height: 1;
+            color: rgb(158, 146, 146);
+            @media all and (max-width:600px){
+                padding: 0 30px
+            }
+        }
+        p.whitesmall{
+            font-family: 'GRAPHIK', sans-serif;
+            font-size: 16px;
+            line-height: 1;
+            color: #fff;
+            @media all and (max-width:600px){
+                padding: 0 30px
+            }
+        }
+
+        @media all and (max-width: 1000px){
+            p.whitebig{
+                font-size: 23px;
+            }
+            span.brightbig{
+                font-size: 23px;
+            }
+            p.brightbig{
+                font-size: 23px;
+            }
+        }
+
+        img{
+            padding-left: 5px;
+        }
+
+
+        
+        
+    }
+    @media all and (max-width: 600px){
+        .height--1{
+            margin: 60px 0 30px 30px;
+            
+            hr{
+                margin-right: 45px;
+            } 
+        }
+        hr.second{
+            margin: 0 35px 30px 35px;
+        }
+        .height--2{
+            hr{
+                margin: 0 35px 30px 35px;
+            }
+        }
+
+    }
+    .row.flex{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        .item{
+            max-width: 170px;
+            width: 100%;
+            padding-bottom: 20px;
+            span.num{
+                color: #fff;
+                font-size: 48px;
+                line-height: 1.5;
+                font-family: 'GRAPHIK', sans-serif;
+                font-weight: 500;
+            }
+            span.define{
+                font-size: 16px;
+                color: rgb(158, 146, 146);
+                line-height: 1;
+                font-family: 'GRAPHIK', sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+}

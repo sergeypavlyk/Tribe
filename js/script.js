@@ -137,7 +137,23 @@ if($(window).innerWidth() >= 600) {
             // interstitialSection : ".fourth, .third, .sixth, .fifth, .seventh"
         });
     });
- } 
+ }
  
+ 
+
+ //google earth video play
+ $('section.nineth img').on('click', function(){
+    $('section.nineth video')[0].play();
+    $('section.nineth img').css('display', 'none');
+})
+ 
+
+//upslide googlevideo
+// $('section.nineth img').on('inview', function(event, isInView) {
+//     if (isInView) {
+//         $('section.section.eight ').css('margin-bottom', '50vh');
+//     } else {
+//     }
+//   });
 
 });
