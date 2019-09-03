@@ -145,6 +145,8 @@ if($(window).innerWidth() >= 600) {
  $('section.nineth img').on('click', function(){
     $('section.nineth video')[0].play();
     $('section.nineth img').css('display', 'none');
+    $('section.nineth.ellipse')
+.css('margin-left', '65%')
 })
  
 
@@ -155,5 +157,16 @@ if($(window).innerWidth() >= 600) {
 //     } else {
 //     }
 //   });
+
+
+//last video click
+// function play(event) {
+//     var noRedirect = '.play, #video, .dopsvideo, .dops *';
+//     if (!event.target.matches(noRedirect)) {
+//         $('.clickableimg').css('display', 'none');
+//         $('#videoPlayer').get(0).play();
+//     }
+//   };
+//   document.body.addEventListener('click', play);
 
 });

@@ -85,7 +85,7 @@ section.emptyforheader {
 section.emptyforplanet {
   height: 100vh;
   margin-bottom: -78vh;
-  margin-top: -22vh;
+  margin-top: -28vh;
   z-index: 50; }
 
 header {
@@ -746,7 +746,6 @@ section.eight {
         margin-left: 50px; } }
 
 section.nineth {
-  position: relative;
   z-index: -1;
   width: 100%;
   height: 100vh; }
@@ -754,18 +753,98 @@ section.nineth {
     width: 100%;
     height: 50vh;
     background-color: #000; }
-  section.nineth video {
-    width: 100%;
-    object-fit: cover;
-    -o-object-fit: cover;
-    object-position: center;
-    -o-object-position: center; }
-  section.nineth img {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer; }
+    @media all and (max-width: 768px) {
+      section.nineth .up {
+        height: 70vh; } }
+    section.nineth .up p {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 15%;
+      font-family: 'GRAPHIK', sans-serif;
+      font-size: 53px;
+      color: #9e9292;
+      line-height: 50px;
+      padding-left: 5px;
+      padding-top: 15px;
+      letter-spacing: -2px; }
+    @media all and (max-width: 1000px) {
+      section.nineth .up p {
+        font-size: 46px; } }
+    section.nineth .up .flex {
+      display: flex;
+      max-width: 600px;
+      margin-top: 10%;
+      padding-left: 50px;
+      margin-left: 80px;
+      justify-content: space-between; }
+      @media screen and (max-width: 800px) {
+        section.nineth .up .flex {
+          margin-top: 1%;
+          padding-left: 0;
+          margin-left: 40%; } }
+      @media screen and (max-width: 500px) {
+        section.nineth .up .flex {
+          margin-top: 1%;
+          padding-left: 0;
+          margin-left: 0%; } }
+      section.nineth .up .flex span.num {
+        color: #fff;
+        font-size: 48px;
+        line-height: 1;
+        font-family: 'GRAPHIK', sans-serif;
+        font-weight: 500; }
+      section.nineth .up .flex span.define {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1;
+        font-family: 'GRAPHIK', sans-serif;
+        font-weight: 400; }
+      section.nineth .up .flex .item {
+        padding: 20px;
+        max-width: 160px; }
+        section.nineth .up .flex .item small {
+          font-size: 16px; }
+    section.nineth .up hr {
+      height: 0.5px;
+      background-color: #9e9292;
+      margin-top: 5px;
+      max-width: 550px;
+      margin-left: 58%; }
+      @media screen and (max-width: 800px) {
+        section.nineth .up hr {
+          margin-left: 42%;
+          max-width: 370px; } }
+    section.nineth .up img {
+      margin-top: -60px;
+      margin-left: 60%; }
+    @media all and (max-width: 700px) {
+      section.nineth .up img {
+        display: none; }
+      section.nineth .up hr {
+        display: none; } }
+  section.nineth .bottom {
+    position: relative;
+    height: 50vh; }
+    section.nineth .bottom img {
+      position: absolute;
+      margin-top: 20vh;
+      left: 50%;
+      cursor: pointer; }
+      @media screen and (max-width: 800px) {
+        section.nineth .bottom img {
+          left: 40%;
+          margin-top: 10vh; } }
+    section.nineth .bottom video {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      object-fit: cover;
+      -o-object-fit: cover;
+      object-position: center;
+      -o-object-position: center; }
 
 section.tenth {
   height: 100vh;
