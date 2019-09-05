@@ -46,7 +46,12 @@ $('.climateaction span.white').on('inview', function(event, isInView) {
         $('section.fourth .today').addClass('active');
         $('section.third .rightside, section.third .leftside').css('margin-top', '-60.5vh');
         $('.tomorrow hr').addClass('active');
-    } else {
+    }
+  });
+
+  $('section.tenth p.trigger').on('inview', function(event, isInView) {
+    if (isInView) {
+        $('section.tenth .top, section.tenth .mid, section.tenth .bottom').css('display', 'block');
     }
   });
 

@@ -34,13 +34,13 @@ section.tenth{
             font-size: 16px;
         }
         &:nth-child(3){
-            // margin-top: 450px;
             font-size: 35px;
             max-width: 200px;
             width: 100%;
         }
     }
     .top {
+        display: none;
         animation-name: fade;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
@@ -63,8 +63,12 @@ section.tenth{
             opacity: 0;
         }
     }
+    .bottom{
+        display: none;
+    }
 
     .mid {
+        display: none;
         animation-name: fade;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
