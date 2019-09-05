@@ -122,6 +122,8 @@ section.first {
   width: 100%;
   position: relative;
   overflow: hidden; }
+  section.first sup {
+    vertical-align: 10px; }
   section.first .slideup {
     position: absolute;
     top: 0;
@@ -741,6 +743,8 @@ section.nineth {
   width: 100%;
   min-height: 100vh;
   background-color: #000; }
+  section.nineth sup {
+    vertical-align: 10px; }
   section.nineth .up {
     height: 50vh;
     width: 100%;
@@ -920,6 +924,10 @@ section.eleventh {
   width: 100%;
   height: auto;
   background-color: #000; }
+  section.eleventh small {
+    font-size: 16px; }
+  section.eleventh sup {
+    vertical-align: 10px; }
   section.eleventh .height--1, section.eleventh .height--2 {
     position: relative;
     margin: 150px 0 150px 30px; }

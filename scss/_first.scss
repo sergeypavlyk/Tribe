@@ -3,6 +3,9 @@ section.first{
     width: 100%;
     position: relative;
     overflow: hidden;
+    sup{
+        vertical-align: 10px;
+    }
     .slideup{
         position: absolute;
         top: 0;

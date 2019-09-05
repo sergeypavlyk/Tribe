@@ -2,6 +2,12 @@ section.eleventh{
     width: 100%;
     height: auto;
     background-color: #000;
+    small{
+        font-size: 16px;
+    }
+    sup{
+        vertical-align: 10px;
+    }
     .height--1, .height--2{
         
         position: relative;
