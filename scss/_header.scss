@@ -1,10 +1,13 @@
+
 header{
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     z-index: 10;
     padding: 4px 5px 0 7px;
     font-family: 'Consolas', sans-serif;
+    overflow: hidden;
     .navbar-brand{
         font-size: 18px;
         letter-spacing:-1.2px;

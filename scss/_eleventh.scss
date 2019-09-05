@@ -41,6 +41,7 @@ section.eleventh{
             height: 0.5px;
         }
         hr.second{
+            width: 110%;
             margin-top: 168px;
             height: 0.5px;
             background-color: rgb(158, 146, 146);
@@ -66,7 +67,9 @@ section.eleventh{
         p.whitebig{
             font-family: 'GRAPHIK', sans-serif;
             font-size: 30px;
-            line-height: 1;
+            line-height: 30px;
+            letter-spacing: -3px;
+            padding-top: 15px;
             color: #fff;
             @media all and (max-width:600px){
                 padding: 0 30px
@@ -75,8 +78,8 @@ section.eleventh{
         span.brightbig{
             font-family: 'GRAPHIK', sans-serif;
             font-size: 30px;
-            line-height: 1;
-            
+            line-height: 30px;
+            letter-spacing: -2px;
             color: rgb(158, 146, 146);
             @media all and (max-width:600px){
                 padding: 10px 30px;
@@ -87,16 +90,20 @@ section.eleventh{
             padding: 30px 0 30px 0;
             font-family: 'GRAPHIK', sans-serif;
             font-size: 30px;
-            line-height: 1;
+            line-height: 30px;
             color: rgb(158, 146, 146);
+            letter-spacing: -2px;
             @media all and (max-width:600px){
                 padding: 0 30px
             }
         }
+        hr.hrsec{
+            width: 110%;
+        }
         p.whitesmall{
             font-family: 'GRAPHIK', sans-serif;
             font-size: 16px;
-            line-height: 1;
+            line-height: 5px;
             color: #fff;
             @media all and (max-width:600px){
                 padding: 0 30px
@@ -144,24 +151,24 @@ section.eleventh{
     .row.flex{
         display: flex;
         justify-content: space-evenly;
-        margin: 0 auto;
         .item{
-            max-width: 170px;
+            max-width: 160px;
             width: 100%;
-            padding-bottom: 20px;
+            padding-bottom: 120px;
             span.num{
                 color: #fff;
                 font-size: 48px;
-                line-height: 1.5;
+                line-height: 1;
                 font-family: 'GRAPHIK', sans-serif;
-                font-weight: 500;
+                font-weight: 400;
             }
             span.define{
                 font-size: 16px;
                 color: rgb(158, 146, 146);
-                line-height: 1;
+                letter-spacing: 0.5;
                 font-family: 'GRAPHIK', sans-serif;
                 font-weight: 400;
+                margin-bottom: 50px;
             }
         }
     }

@@ -2,6 +2,7 @@
 section.third{
     width: 100%;
     min-height: 100vh;
+    z-index: 20;
     .leftside{
         background-color: #000;
         transition: 3s;

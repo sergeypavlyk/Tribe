@@ -2,6 +2,7 @@ section.nineth{
     z-index: -1;
     width: 100%;
     min-height: 100vh;
+    background-color: #000;
     .up{
         height: 50vh;
         width: 100%;
@@ -79,7 +80,7 @@ section.nineth{
             }
         }
         img.ellipse{
-            margin-top: -65px;
+            margin-top: -62px;
             margin-left: 60%;
             transition: .5s;
         }

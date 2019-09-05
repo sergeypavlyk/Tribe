@@ -5,13 +5,14 @@ section.fourth{
         background-size: cover;
         background-repeat: no-repeat;
         height: 60.5vh;
-        position: relative;
         margin-top: -60.5vh;
         z-index: -1;
-        opacity: 0.3;
+        position: relative;
+        opacity: 0;
         transition: 3s;
         &.active{
             opacity: 1;
+            z-index: 0;
         }
         hr{
             position: absolute;

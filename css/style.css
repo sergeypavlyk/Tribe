@@ -19,69 +19,69 @@
 body.html {
   overflow: hidden; }
 
-section.first {
-  width: 100%; }
-  section.first video {
+section.first video {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -30;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center; }
+
+section.first .bottomtext {
+  position: fixed;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  font-family: 'Consolas', sans-serif;
+  font-weight: 400;
+  z-index: -5;
+  color: #fff; }
+  section.first .bottomtext .scroll {
+    font-size: 12px;
+    display: inline-table;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    padding: 10px 0 0 10px; }
+    @media screen and (max-width: 800px) {
+      section.first .bottomtext .scroll {
+        padding: 12px 30px 23px 0; } }
+    @media screen and (max-width: 760px) {
+      section.first .bottomtext .scroll {
+        display: none; } }
+  section.first .bottomtext .description {
+    max-width: 335px;
+    min-width: 185px;
     width: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -10;
-    object-fit: cover;
-    object-position: center;
-    -o-object-fit: cover;
-    -o-object-position: center; }
-  section.first .bottomtext {
-    position: fixed;
-    bottom: 16px;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
-    font-family: 'Consolas', sans-serif;
-    font-weight: 400;
-    z-index: -5;
-    color: #fff; }
-    section.first .bottomtext .scroll {
-      font-size: 12px;
-      display: inline-table;
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -o-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      transform: rotate(-90deg);
-      padding: 10px 0 0 10px; }
-      @media screen and (max-width: 800px) {
-        section.first .bottomtext .scroll {
-          padding: 12px 30px 23px 0; } }
-      @media screen and (max-width: 760px) {
-        section.first .bottomtext .scroll {
-          display: none; } }
-    section.first .bottomtext .description {
-      max-width: 335px;
-      min-width: 185px;
-      width: 100%;
-      font-size: 12px;
-      line-height: 15px;
-      margin-left: 102px;
-      margin-bottom: 5px; }
-      @media screen and (max-width: 800px) {
-        section.first .bottomtext .description {
-          width: 185px;
-          margin-left: 55px; } }
-      @media screen and (max-width: 800px) {
-        section.first .bottomtext .description {
-          width: 185px;
-          margin-left: 20px; } }
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 102px;
+    margin-bottom: 5px; }
+    @media screen and (max-width: 800px) {
+      section.first .bottomtext .description {
+        width: 185px;
+        margin-left: 55px; } }
+    @media screen and (max-width: 800px) {
+      section.first .bottomtext .description {
+        width: 185px;
+        margin-left: 20px; } }
 
 header {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 10;
   padding: 4px 5px 0 7px;
-  font-family: 'Consolas', sans-serif; }
+  font-family: 'Consolas', sans-serif;
+  overflow: hidden; }
   header .navbar-brand {
     font-size: 18px;
     letter-spacing: -1.2px;
@@ -227,7 +227,8 @@ section.empty {
 
 section.third {
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  z-index: 20; }
   section.third .leftside {
     background-color: #000;
     transition: 3s; }
@@ -424,13 +425,14 @@ section.fourth {
     background-size: cover;
     background-repeat: no-repeat;
     height: 60.5vh;
-    position: relative;
     margin-top: -60.5vh;
     z-index: -1;
-    opacity: 0.3;
+    position: relative;
+    opacity: 0;
     transition: 3s; }
     section.fourth .today.active {
-      opacity: 1; }
+      opacity: 1;
+      z-index: 0; }
     section.fourth .today hr {
       position: absolute;
       top: 38%;
@@ -566,9 +568,6 @@ section.fifth {
   width: 100%;
   min-height: 50.5vh;
   background-color: #000; }
-  section.fifth .up {
-    height: 50vh;
-    margin-top: -50vh; }
   section.fifth .container-fluid {
     width: 100%; }
     section.fifth .container-fluid .row {
@@ -652,7 +651,6 @@ section.sixth {
         font-family: 'GRAPHIK', sans-serif; }
 
 section.seventh {
-  min-height: 100vh;
   width: 100%; }
   section.seventh .up {
     height: 32vh;
@@ -741,7 +739,8 @@ section.eight {
 section.nineth {
   z-index: -1;
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #000; }
   section.nineth .up {
     height: 50vh;
     width: 100%;
@@ -808,7 +807,7 @@ section.nineth {
           margin-left: 42%;
           max-width: 370px; } }
     section.nineth .up img.ellipse {
-      margin-top: -65px;
+      margin-top: -62px;
       margin-left: 60%;
       transition: .5s; }
     @media all and (max-width: 700px) {
@@ -952,6 +951,7 @@ section.eleventh {
       background-color: #9e9292;
       height: 0.5px; }
     section.eleventh .height--1 hr.second, section.eleventh .height--2 hr.second {
+      width: 110%;
       margin-top: 168px;
       height: 0.5px;
       background-color: #9e9292; }
@@ -970,7 +970,9 @@ section.eleventh {
     section.eleventh .height--1 p.whitebig, section.eleventh .height--2 p.whitebig {
       font-family: 'GRAPHIK', sans-serif;
       font-size: 30px;
-      line-height: 1;
+      line-height: 30px;
+      letter-spacing: -3px;
+      padding-top: 15px;
       color: #fff; }
       @media all and (max-width: 600px) {
         section.eleventh .height--1 p.whitebig, section.eleventh .height--2 p.whitebig {
@@ -978,7 +980,8 @@ section.eleventh {
     section.eleventh .height--1 span.brightbig, section.eleventh .height--2 span.brightbig {
       font-family: 'GRAPHIK', sans-serif;
       font-size: 30px;
-      line-height: 1;
+      line-height: 30px;
+      letter-spacing: -2px;
       color: #9e9292; }
       @media all and (max-width: 600px) {
         section.eleventh .height--1 span.brightbig, section.eleventh .height--2 span.brightbig {
@@ -988,15 +991,18 @@ section.eleventh {
       padding: 30px 0 30px 0;
       font-family: 'GRAPHIK', sans-serif;
       font-size: 30px;
-      line-height: 1;
-      color: #9e9292; }
+      line-height: 30px;
+      color: #9e9292;
+      letter-spacing: -2px; }
       @media all and (max-width: 600px) {
         section.eleventh .height--1 p.brightbigl, section.eleventh .height--2 p.brightbigl {
           padding: 0 30px; } }
+    section.eleventh .height--1 hr.hrsec, section.eleventh .height--2 hr.hrsec {
+      width: 110%; }
     section.eleventh .height--1 p.whitesmall, section.eleventh .height--2 p.whitesmall {
       font-family: 'GRAPHIK', sans-serif;
       font-size: 16px;
-      line-height: 1;
+      line-height: 5px;
       color: #fff; }
       @media all and (max-width: 600px) {
         section.eleventh .height--1 p.whitesmall, section.eleventh .height--2 p.whitesmall {
@@ -1021,27 +1027,27 @@ section.eleventh {
       margin: 0 35px 30px 35px; } }
   section.eleventh .row.flex {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto; }
+    justify-content: space-evenly; }
     section.eleventh .row.flex .item {
-      max-width: 170px;
+      max-width: 160px;
       width: 100%;
-      padding-bottom: 20px; }
+      padding-bottom: 120px; }
       section.eleventh .row.flex .item span.num {
         color: #fff;
         font-size: 48px;
-        line-height: 1.5;
-        font-family: 'GRAPHIK', sans-serif;
-        font-weight: 500; }
-      section.eleventh .row.flex .item span.define {
-        font-size: 16px;
-        color: #9e9292;
         line-height: 1;
         font-family: 'GRAPHIK', sans-serif;
         font-weight: 400; }
+      section.eleventh .row.flex .item span.define {
+        font-size: 16px;
+        color: #9e9292;
+        letter-spacing: 0.5;
+        font-family: 'GRAPHIK', sans-serif;
+        font-weight: 400;
+        margin-bottom: 50px; }
 
 section.twelveth {
-  min-height: 85vh;
+  min-height: 93vh;
   height: 100%;
   width: 100%;
   position: relative;
@@ -1050,31 +1056,36 @@ section.twelveth {
   font-family: 'GRAPHIK', sans-serif; }
   section.twelveth .row {
     position: absolute;
-    bottom: 0; }
+    bottom: 20px; }
   section.twelveth img {
     width: 100%;
     object-fit: cover;
-    height: 70vh; }
+    height: 73vh; }
     @media all and (max-width: 600px) {
       section.twelveth img {
         height: 60vh; } }
   section.twelveth p {
-    color: #fff; }
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer; }
   section.twelveth span {
-    color: #9e9292; }
+    color: #9e9292;
+    max-width: 150px; }
   section.twelveth span.blockk {
     display: block;
     padding-bottom: 20px; }
   section.twelveth span.white {
     color: #fff;
-    padding-right: 50px; }
+    padding-right: 50px;
+    margin-left: -3px; }
   @media all and (max-width: 768px) {
     section.twelveth span.bright {
       display: none; } }
   section.twelveth .bottom {
-    left: 30px; }
+    left: 30px;
+    top: 20%; }
   section.twelveth .bottomright {
-    padding-top: 60px; }
+    padding-top: 80px; }
   section.twelveth .btn {
     position: absolute;
     top: 50%;

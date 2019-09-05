@@ -7,8 +7,11 @@ $(document).ready(function() {
 new WOW().init();
 
 //forlogo anchor
-$('#top').on("click",function() {
-    $('body').animate({ scrollTop: 0 }, 'slow');
+$('#top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 400);
+    return false;
 });
 
 
@@ -36,10 +39,6 @@ if ($(window).width() < 770) {
 
 
 
-
-
-
-
 //when fifth section 5vh is in viewport img slide from up
 $('.climateaction span.white').on('inview', function(event, isInView) {
     if (isInView) {
@@ -54,29 +53,6 @@ $('.climateaction span.white').on('inview', function(event, isInView) {
         $('section.tenth .top, section.tenth .mid, section.tenth .bottom').css('display', 'block');
     }
   });
-
-
-//or this function
-
-// $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-//     console.log(scroll);
-//     var h = $(window).height(); 
-//     if (scroll >= 1642) { 
-//         function go(){
-//             $('section.fourth .today').addClass('active');
-//             $('section.third .rightside, section.third .leftside').css('margin-top', '-60.5vh');
-//           }
-//           setTimeout(go, 1000);   
-//     }
-//     if (scroll >= 1642) { 
-//         $('.tomorrow hr').addClass('active');
-//     }
-    
-//    })
-
-
-
 
 
 
@@ -94,35 +70,6 @@ $('.dopsvideo').on('inview', function(event, isInView) {
     }
   });
 
-
-  //or this function
-
-// $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-//     console.log(scroll);
-//     var h = $(window).height(); 
-//     if (scroll >= 1500) { 
-//         $('.rightside img').addClass('active');
-//         $('.all h2.white').addClass('active');
-//     }
-//    })
-
-
-
-//scrollify function
-if($(window).innerWidth() >= 600) {
-    $(function() {
-        $.scrollify({
-            section : ".section",
-            scrollSpeed: 1300,
-            scrollbars: false,
-            touchScroll: true,
-            setHeights: false,
-            easing: "easeOutQuart",
-            // interstitialSection : ".fourth, .third, .sixth, .fifth, .seventh"
-        });
-    });
- }
  
  
 
@@ -132,25 +79,16 @@ if($(window).innerWidth() >= 600) {
     $('section.nineth img.clickableimg').css('opacity', '0');
     $('img.ellipse').css('margin-left', '65%');
 })
+if ($("section.nineth video").get(0).played){
+    $('section.nineth video').on('click', function(){
+        $("section.nineth video").get(0).pause();
+        $('section.nineth img.clickableimg').css('opacity', '1');
+        $('img.ellipse').css('margin-left', '60%');
+    })
+}
  
 
-//upslide googlevideo
-// $('section.nineth img').on('inview', function(event, isInView) {
-//     if (isInView) {
-//         $('section.section.eight ').css('margin-bottom', '50vh');
-//     } else {
-//     }
-//   });
 
 
-//last video click
-// function play(event) {
-//     var noRedirect = '.play, #video, .dopsvideo, .dops *';
-//     if (!event.target.matches(noRedirect)) {
-//         $('.clickableimg').css('display', 'none');
-//         $('#videoPlayer').get(0).play();
-//     }
-//   };
-//   document.body.addEventListener('click', play);
 
 });

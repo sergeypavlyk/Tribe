@@ -25,15 +25,13 @@ body.html{
 
 //first video
 section.first{
-    width: 100%;
     video{
-        width: 100%;
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: -10;
+        z-index: -30;
         object-fit: cover;
         object-position: center;
         -o-object-fit: cover;
