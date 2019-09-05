@@ -1,24 +1,4 @@
-// const sections = [...document.getElementsByTagName('section')];
-// let currentSection = 0;
-
-// window.addEventListener('wheel', function(e) {
-//   e.preventDefault();
-
-//   (e.deltaY < 0) ? --currentSection: ++currentSection;
-
-//   if (currentSection < 0) currentSection = 0;
-//   else if (currentSection > (sections.length - 1)) currentSection = (sections.length - 1);
-
-//   scrollToSection(currentSection);
-// });
-
-// function scrollToSection(i) {
-//   document.getElementById(sections[i].id).scrollIntoView({
-//     behavior: 'smooth'
-//   });
-// }
-
-    
+  
 $(document).ready(function() {
 
 
@@ -61,7 +41,7 @@ if ($(window).width() < 770) {
 
 
 //when fifth section 5vh is in viewport img slide from up
-$('section.trigger .bottom').on('inview', function(event, isInView) {
+$('.climateaction span.white').on('inview', function(event, isInView) {
     if (isInView) {
         $('section.fourth .today').addClass('active');
         $('section.third .rightside, section.third .leftside').css('margin-top', '-60.5vh');
@@ -129,11 +109,11 @@ if($(window).innerWidth() >= 600) {
     $(function() {
         $.scrollify({
             section : ".section",
-            scrollSpeed: 2000,
+            scrollSpeed: 1300,
             scrollbars: false,
             touchScroll: true,
             setHeights: false,
-            easing: "easeInOutCubic",
+            easing: "easeOutQuart",
             // interstitialSection : ".fourth, .third, .sixth, .fifth, .seventh"
         });
     });
@@ -144,9 +124,8 @@ if($(window).innerWidth() >= 600) {
  //google earth video play
  $('section.nineth img').on('click', function(){
     $('section.nineth video')[0].play();
-    $('section.nineth img').css('display', 'none');
-    $('section.nineth.ellipse')
-.css('margin-left', '65%')
+    $('section.nineth img.clickableimg').css('opacity', '0');
+    $('img.ellipse').css('margin-left', '65%');
 })
  
 

@@ -19,10 +19,15 @@
     }
 }
 
+body.html{
+    overflow: hidden;
+}
 
 //first video
 section.first{
+    width: 100%;
     video{
+        width: 100%;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -81,28 +86,17 @@ section.first{
         }
     }
 }
-section.trigger{
-    margin-top: -95vh;
-    .up{
-        height: 95vh;
+// section.trigger{
+//     margin-top: -95vh;
+//     .up{
+//         height: 95vh;
 
-    }
-    .bottom{
-        height: 5vh;
-        background-color: #000;
-    }
-}
-
-section.emptyforheader{
-    height: 100vh;
-    margin-bottom: -35vh;
-}
-section.emptyforplanet{
-    height: 100vh;
-    margin-bottom: -78vh;
-    margin-top: -28vh;
-    z-index: 50;
-}
+//     }
+//     .bottom{
+//         height: 5vh;
+//         background-color: #000;
+//     }
+// }
 
 
 
